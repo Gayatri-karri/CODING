@@ -2,7 +2,6 @@
 For Example : n = 10 m=50
 Output: 50 48 46 44......10*/
 
-
 class Reverse
 {
 public static void main(String args[])
@@ -12,10 +11,12 @@ int m,n;
 System.out.println("Enter m,n");
 m=sc.nextInt();
 n=sc.nextInt();
-for(int i=m;m>=n;m--)
+while(m>=n)
 {
 if(m%2==0)
 System.out.print(m+" ");
+m--;
 }
 }
 }
+
