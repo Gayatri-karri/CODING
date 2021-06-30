@@ -10,16 +10,9 @@ while(n!=0)
 {
 r=n%10;
 sum+=r;
+product*=r;
 n=n/10;
 }
-//System.out.println(sum);
-while(n1>0)
-{
-r=n1%10;
-product*=r;
-n1=n1/10;
-}
-//System.out.println(product);
 res=-(sum-product);
 return(res);
 }
