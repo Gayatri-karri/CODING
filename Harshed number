@@ -1,0 +1,25 @@
+//2. Program to print given number is harshad number or not.
+class Harshed
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+ int n=sc.nextInt();  
+int num=n;        
+ int h;                             
+ int sum=0;
+while(num>0)
+ {
+int r=num%10;     
+ sum=sum+r;	
+num=num/10;	
+ } 
+ h= (n%sum);	
+ if (h==0) 	{
+System.out.println(" Harshed number");
+}else  
+{
+System.out.println("Not  a Harshed number");
+}
+}
+}
