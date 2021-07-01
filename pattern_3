@@ -13,7 +13,7 @@ public static void main (String args[])
 {
 Scanner sc=new Scanner(System.in);
 System.out.print("Enter N");
-int N=sc.nextInt();
+int N=sc.nextInt();    //N=5
 char ch='A';
 for(int i=1;i<=N;i++)
 {
