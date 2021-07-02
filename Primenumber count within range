@@ -30,7 +30,7 @@ break;
 }}
 if (flag == 0)
 {
-System.out.println(i);
+//System.out.println(i);
 prime_count++;
 }}}
 System.out.println("Number of primes between a and b are "+" "+prime_count);
