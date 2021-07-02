@@ -7,7 +7,7 @@ System.out.println("Enter range a,b");
 Scanner sc=new Scanner(System.in);
 int a=sc.nextInt();
 int b=sc.nextInt();
-int flag=0, prime_count=0;
+int flag=0,count=0;
 if (b<2)
 {
 System.out.println("There are no primes upto "+" "+b);
@@ -31,7 +31,7 @@ break;
 if (flag == 0)
 {
 //System.out.println(i);
-prime_count++;
+count++;
 }}}
 System.out.println("Number of primes between a and b are "+" "+prime_count);
 }}
