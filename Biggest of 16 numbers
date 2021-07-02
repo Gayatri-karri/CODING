@@ -1,0 +1,32 @@
+//Biggest of 16 numbers
+
+class Biggest
+{
+public static void main(String args[])
+{
+System.out.println("Enter 16 numbers");
+Scanner sc=new Scanner(System.in);
+int a1=sc.nextInt();
+int a2=sc.nextInt();
+int a3=sc.nextInt();
+int a4=sc.nextInt();
+int a5=sc.nextInt();
+int a6=sc.nextInt();
+int a7=sc.nextInt();
+int a8=sc.nextInt();
+int a9=sc.nextInt();
+int a10=sc.nextInt();
+int a11=sc.nextInt();
+int a12=sc.nextInt();
+int a13=sc.nextInt();
+int a14=sc.nextInt();
+int a15=sc.nextInt();
+int a16=sc.nextInt();
+int big1=(int)Math.max(Math.max(a1,a2),Math.max(a3,a4));
+int big2=(int)Math.max(Math.max(a5,a6),Math.max(a7,a8));
+int big3=(int)Math.max(Math.max(a9,a10),Math.max(a11,a12));
+int big4=(int)Math.max(Math.max(a13,a14),Math.max(a15,a16));
+int big=(int)Math.max(Math.max(big1,big2),Math.max(big3,big4));
+System.out.print(big);
+}
+}
