@@ -1,0 +1,37 @@
+import java.util.*;
+class Prime_count
+{
+public static void main (String[] args)
+{
+System.out.println("Enter range a,b");
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int flag=0, prime_count=0;
+if (b<2)
+{
+System.out.println("There are no primes upto "+" "+b);
+}
+else if(a==1)
+{
+a+=1;
+}
+if(a>1)
+{
+for (int i = a; i <=b; i = i +1)
+{
+flag = 0;
+for (int j = 2; j <= i/2 ; j++)
+{
+if ((i % j) == 0)
+{
+flag = 1;
+break;
+}}
+if (flag == 0)
+{
+System.out.println(i);
+prime_count++;
+}}}
+System.out.println("Number of primes between a and b are "+" "+prime_count);
+}}
