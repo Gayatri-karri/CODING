@@ -1,6 +1,6 @@
 //Biggest of 16 numbers
 import java.util.*;
-class Biggest
+class Big
 {
 public static void main(String args[])
 {
