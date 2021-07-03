@@ -1,6 +1,6 @@
 // Program to print given number is Automorphic Number or not.
 //A number is called Automorphic number if and only if its square ends in the same digits as the number itself.
-
+import java.util.*;
 class Automorphic
 {
 public static void main(String args[])
