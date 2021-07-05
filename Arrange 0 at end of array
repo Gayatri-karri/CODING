@@ -1,0 +1,31 @@
+import java.util.*;
+class  Zeroatend
+{ 
+public static void main(String arg[]) 
+{ 
+Scanner sc=new Scanner(System.in);
+ int size,i; 
+System.out.print("Enter array size:");
+ size=sc.nextInt(); 
+int ar[]=new int[size]; 
+System.out.print("Enter array elements:"); 
+for(i=0;i<size;i++) 
+{
+ar[i]=sc.nextInt(); 
+}
+for(i=0;i<size;i++)
+{
+if(ar[i]!=0)
+{
+System.out.print(ar[i]+" ");
+}
+}
+for(i=0;i<size;i++)
+{
+if(ar[i]==0)
+{
+System.out.print(ar[i]+" ");
+}
+}
+}
+}
