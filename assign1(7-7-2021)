@@ -1,0 +1,37 @@
+//assignment1: Program to find the total count of even and odd number from the array and multiply it.
+//And,check the mutliplying number whether it is even or odd number. 
+
+
+import java.util.*;
+class  Result
+{
+public static void main(String args[])
+{
+int even_count=0;int odd_count=0;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter size");
+int n=sc.nextInt();
+int ar[]=new int[n];
+System.out.print("Enter array elements");
+for(int i=0;i<n;i++)
+{
+ar[i]=sc.nextInt();
+}
+for(int j=0;j<n;j++)
+{
+if(ar[j]%2==0)
+{
+even_count++;
+}
+else
+{
+odd_count++;
+}}
+//System.out.print(even_count);
+//System.out.print(odd_count);
+int mul=even_count*odd_count;
+System.out.print(mul);
+String res=(mul%2==0)?"Even":"odd";
+System.out.print(res);
+}
+}
