@@ -30,7 +30,7 @@ odd_count++;
 //System.out.print(even_count);
 //System.out.print(odd_count);
 int mul=even_count*odd_count;
-System.out.print(mul);
+//System.out.print(mul);
 String res=(mul%2==0)?"Even":"odd";
 System.out.print(res);
 }
