@@ -1,0 +1,32 @@
+//assignment-3 program to rotate the array k times in right side.
+import java.util.*;
+class Right_rotation
+{
+public static void main(String[] args)
+{ 
+Scanner sc=new Scanner(System.in);
+System.out.print("enter size n");
+int i; 
+int n=sc.nextInt(); 
+System.out.print("enter no.of rotations");
+int r=sc.nextInt(); 
+System.out.print("enter elements");
+int a[]=new int[n]; 
+int b[]=new int[n]; 
+for(i=0;i<n;i++) 
+{
+a[i]=sc.nextInt(); 
+}
+for(i=0;i<n;i++)
+{
+ if((i-r)<=0)
+ {
+  b[n+i-1-r]=a[i]; 
+}
+ else 
+{
+b[i-1-r]=a[i];
+}}
+ for(i=0;i<n;i++)
+ System.out.print(b[i]);
+ } }
