@@ -1,0 +1,33 @@
+//count the number of symbols,letters,digits and if they are equal print "yes" otherwise print "no"
+
+import java.util.*;
+class Count_characters
+{
+public static void main(String args[])
+{
+String str;
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter string:");
+str=sc.next();
+int u=0,l=0,d=0,s=0;
+char ch[]=str.toCharArray();
+for(int i=0;i<ch.length;i++)
+{
+if(Character.isUpperCase(ch[i]))
+u++;
+else if(Character.isLowerCase(ch[i]))
+l++;
+else if(Character.isDigit(ch[i]))
+d++;
+else
+s++;
+}
+if((u==l)&&(u==s)&&(d==s))
+{
+System.out.println("YES");
+}
+else
+{
+System.out.println("NO");
+}
+}}
