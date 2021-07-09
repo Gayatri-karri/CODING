@@ -1,6 +1,6 @@
 count the number of lentgh of the entire data without including spaces.
 import java.util.*;
-class Stringsplit
+class String_length
 {
 public static void main(String args[])
 {
