@@ -1,0 +1,21 @@
+//1.Write a program to convert every starting word of a letter is upper letter.
+//Ex:1 Input: this is coding class output:This Is Coding Class 
+//Ex2: Input: sun rises in the east Output: Sun Rises In The East 
+
+import java.util.*;
+class assignment_1
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter string");
+String str=sc.nextLine();
+String ch[]=str.split(" ");
+int n=ch.length;
+for(int i=0;i<n;i++)
+{
+String s = ch[i].substring(0, 1).toUpperCase() +ch[i].substring(1);
+System.out.print(s+" ");
+}
+}
+}
