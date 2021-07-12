@@ -1,0 +1,26 @@
+//Assignment3: Inserting the one string in the particular position of another data. 
+//Ex:1 Input: Very Good new string: hi position:2 Output: Vhiery Ghiood 
+//Ex:2 Input: hello world new string: hai position:3 Output: hehaillo wohairld
+
+import java.util.*;
+class assignment_3
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter string");
+String str=sc.nextLine();
+System.out.println("Enter inserting string");
+String st=sc.nextLine();
+System.out.println("Enter inserting position");
+int i=sc.nextInt();
+int k=i-1;
+String ch[]=str.split(" ");
+for(int j=0;j<ch.length;j++)
+{
+StringBuilder sb=new StringBuilder(ch[j]);
+sb.insert(k,st);
+System.out.print(sb.toString()+" ");
+}
+}
+}
