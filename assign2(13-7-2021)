@@ -1,0 +1,28 @@
+class sol
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter string");
+String s=sc.nextLine();int count=0;
+int l=s.length();
+String left=s.substring(0,(l/2) );
+String  right=s.substring((l/2),l);
+StringBuffer sb=new StringBuffer(right);
+sb.append(left);
+String str=sb.toString();
+int len=str.length();
+System.out.println(str);
+StringBuffer sb1=new StringBuffer(str);
+for(int i=1;i<len;i++)
+{
+if(str.charAt(i)==str.charAt(i-1))
+count+=1;
+if(count==2)
+{
+sb1.delete(i-1,i+2);
+}
+}
+str=sb1.toString();
+System.out.println(str);
+}}
