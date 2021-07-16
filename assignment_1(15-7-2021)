@@ -1,0 +1,23 @@
+// 1 Write a Java program to join two array lists and print in sorted order 
+//Example1: Input: Enter First Array: 10 20 30 40 Enter Second Array: 100,200,300,400 Ouput: Final List: 10,20,30,40,100,200,300,400 
+//Example2: Input: Enter First Array: red blue green pink Enter Second Array: white yellow pink Ouput: Final List: red blue green pink white yellow pink 
+
+import java.util.*;
+class assign1
+{
+public static void main(String args[])
+{
+ArrayList<Integer>a=new ArrayList<Integer>();
+a.add(1);
+a.add(12);
+a.add(40);
+a.add(10);
+ArrayList<Integer>b=new ArrayList<Integer>();
+b.add(101);
+b.add(2);
+b.add(30);
+b.add(43);
+a.addAll(b);
+Collections.sort(a);
+System.out.println(a);
+}}
