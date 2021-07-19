@@ -8,12 +8,20 @@ import java.util.*;
 class assign2
 { 
 public static void main(String args[]) 
-{ int key;
-HashMap<Integer,Integer> x=new HashMap<Integer,Integer>();
-int[] arr= {2,3, 4, 5, 4, 6, 4, 7, 4, 5, 6, 6}; 
-for(int i=0;i<arr.length;i++) 
 { 
-key=arr[i];
+Scanner sc=new Scanner(System.in);
+HashMap<Integer,Integer> x=new HashMap<Integer,Integer>();
+System.out.println("enter n"); 
+int n=sc.nextInt();
+int[] arr= new int[n];
+System.out.println("enter elements of array"); 
+for(int i=0;i<n;i++) 
+{
+arr[i]=sc.nextInt(); 
+}
+for(int i=0;i<n;i++) 
+{ 
+int key=arr[i];
 if(x.containsKey(key))
 x.put(key,x.get(key)+1); 
 else 
@@ -23,7 +31,6 @@ for(Integer i  :x.keySet())
 {
 if(x.get(i)>1)
 {
-//System.out.println(i); 
 System.out.print(i+"=>"+x.get(i)+" ");
 }
 }
