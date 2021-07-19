@@ -1,0 +1,31 @@
+3.Given an array which may contain duplicates, print all elements and their frequencies. 
+Examples: Input: arr[] = {2, 3, 4, 5, 4, 6, 4, 7, 4, 5, 6, 6} 
+Output: Below is the frequency of repeated elements – 4 –> 4 5 –> 2 6 –> 3
+Input: arr[] = {4, 4, 5, 5, 6}
+Output: Below is the frequency of repeated elements – 4 –> 2 5 –> 2 */
+
+import java.util.*;
+class assign2
+{ 
+public static void main(String args[]) 
+{ int key;
+HashMap<Integer,Integer> x=new HashMap<Integer,Integer>();
+int[] arr= {2,3, 4, 5, 4, 6, 4, 7, 4, 5, 6, 6}; 
+for(int i=0;i<arr.length;i++) 
+{ 
+key=arr[i];
+if(x.containsKey(key))
+x.put(key,x.get(key)+1); 
+else 
+x.put(key,1);
+}
+for(Integer i  :x.keySet())
+{
+if(x.get(i)>1)
+{
+//System.out.println(i); 
+System.out.print(i+"=>"+x.get(i)+" ");
+}
+}
+}
+}
