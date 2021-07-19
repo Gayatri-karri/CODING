@@ -1,0 +1,28 @@
+Assignment1. Write a program to read following values into hashmap using scanner. and print data in sorted order 
+Example: Input: 5 John 1 Sam 7 kim
+         Output: 1 Sam 5 John 7 kim
+
+
+
+import java.util.*;
+class assign1
+{ 
+public static void main(String args[]) 
+{ 
+Scanner sc =new Scanner(System.in);
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+int n,key;String value;
+System.out.print("enter n");
+n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+key=sc.nextInt();
+value=sc.nextLine();
+x.put(key,value);
+}
+//System.out.print(x);
+for(Integer i  :x.keySet())
+{
+System.out.print(i+""+x.get(i)+" ");
+}}
+}
