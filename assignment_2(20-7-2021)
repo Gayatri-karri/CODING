@@ -1,0 +1,25 @@
+import java.util.*;
+class assign2
+{
+public static void main(String args[])
+{
+Scanner sc =new Scanner(System.in);
+System.out.print("enter n");
+int n=sc.nextInt();
+ArrayList<Integer>al=new ArrayList<Integer>();
+ArrayList<Integer>al2=new ArrayList<Integer>();
+System.out.print("enter elements");
+for(int i=0;i<n;i++)
+{
+al.add(sc.nextInt());
+}
+System.out.print("enter key");
+int k=sc.nextInt();
+for(Integer i:al)
+{
+if(i>k)
+al2.add(i);
+}
+System.out.print(al2);
+}
+}
