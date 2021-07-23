@@ -4,6 +4,7 @@ class assign2
 public static void main(String args[])
 {
 Scanner sc=new Scanner(System.in);
+System.out.println("Enter String");
 String str=sc.nextLine();
 int n=str.length();
 char ch[]=str.toCharArray();
