@@ -1,0 +1,26 @@
+class Solution
+{
+    public int searchInsert(int[] nums, int target)
+    {
+        ArrayList<Integer> a=new ArrayList<Integer>();
+        for(int i=0;i<nums.length;i++)
+        {
+            a.add(nums[i]);
+        }
+        for(int i=0;i<nums.length;i++)
+        {
+            
+            if(a.contains(target))
+            {
+                break;         
+            }
+            else
+            {
+                a.add(target);
+            }
+        }
+        Collections.sort(a);
+        return a.indexOf(target);
+       
+    }
+}
