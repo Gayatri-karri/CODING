@@ -34,7 +34,7 @@ class P
 {
 public static void main (String[] args)
 {
-System.out.println("Enter range a,b");
+System.out.println("Enter n");
 Scanner sc=new Scanner(System.in);
 int n=sc.nextInt();
 Solution s=new Solution();
