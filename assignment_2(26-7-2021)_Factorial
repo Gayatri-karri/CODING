@@ -1,0 +1,44 @@
+import java.util.*;
+class Factorial
+{
+int n;
+int  fact(int n)
+{
+if  (n==0)
+{
+return 0;
+}
+else if(n==1)
+{
+return 1;
+} 
+else 
+{
+return (n*fact(n-1));
+}
+}
+int fact1(int c)
+{
+if ((c%10==0)&&(c!=0))
+{
+return 1;
+}
+else 
+{
+return 0;
+}
+}
+}
+class main
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner (System.in);
+System.out.print("enter number");
+int n=sc.nextInt();
+Factorial f=new Factorial();
+Factorial f1=new Factorial();
+int c=f.fact(n);
+System.out.println(f1.fact1(c));
+}
+}
