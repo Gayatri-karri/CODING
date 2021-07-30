@@ -3,10 +3,10 @@ class evenposition_primes
 {
 public static void main(String args[])
 {
-ArrayList<Integer>arr=new ArrayList<Integer>();
+ArrayList<Integer>al=new ArrayList<Integer>();
 Scanner sc=new Scanner(System.in);
 int n=100000;
-int temp[]=new int[n];
+int temp[]={0};
 int prime[]=new int[n+1];
 for(int i=0;i<=n;i++)
 {
@@ -31,15 +31,17 @@ for(int j=start;j<=end;j++)
 {
 if(prime[j]==1)
 {
-arr.add(j);
+al.add(j);
 }
 }
-for (int i = 0; i <arr.size();i++) 
+Integer[] arr = new Integer[al.size()];
+arr= al.toArray(arr);
+for (int i = 0; i<al.size();i++) 
 { 		      
-if(i%2==0)
+if(i%2!=0)
 {
-System.out.print(arr.get(i+1)+" "); 
+System.out.print(arr[i]+" "); 
 }		
 }
 }
-}   
+}    
