@@ -43,7 +43,6 @@ int num2=sc.nextInt();
         {
               if(num1%i==0 && num2%i==0)
         {
-              System.out.println(i+" ");
              al.add(i);
         
 num1=num1/i;
@@ -56,3 +55,22 @@ sum+=al.get(l);
 System.out.print(sum);
 }
 }
+//output
+
+:\gayatri>java T
+15
+20
+5
+5
+C:\gayatri>javac assign31.java
+
+C:\gayatri>java T
+20
+15
+5
+C:\gayatri>javac assign31.java
+
+C:\gayatri>java T
+15
+10
+5
