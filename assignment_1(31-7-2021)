@@ -1,0 +1,58 @@
+Assignment-1: https://www.hackerearth.com/problem/algorithm/4/
+
+import java.util.*;
+class TestClass 
+{
+
+public static void main(String args[]) 
+{
+int num1=55;
+int num2=56320;
+int sum=0;
+ArrayList<Integer>al=new ArrayList<Integer>();	
+ int i;
+        for(i=2;i<=Math.min(num1,num2);i++)
+        {
+              if(num1%i==0 && num2%i==0)
+        {
+              
+             al.add(i);
+        
+num1=num1/i;
+num2=num2/i;
+}}
+for(int l=0;l<al.size();l++)
+{
+sum+=al.get(l);
+}
+System.out.print(sum);
+}
+}
+//In Notepad for all inputs
+class T
+{
+public static void main(String args[]) 
+{
+Scanner sc=new Scanner(System.in); 
+int sum=0;
+ArrayList<Integer>al=new ArrayList<Integer>();
+int num1=sc.nextInt();
+int num2=sc.nextInt();	
+ int i;
+        for(i=2;i<=Math.min(num1,num2);i++)
+        {
+              if(num1%i==0 && num2%i==0)
+        {
+              System.out.println(i+" ");
+             al.add(i);
+        
+num1=num1/i;
+num2=num2/i;
+}}
+for(int l=0;l<al.size();l++)
+{
+sum+=al.get(l);
+}
+System.out.print(sum);
+}
+}
