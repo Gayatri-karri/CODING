@@ -1,0 +1,37 @@
+1. Develop a program using prefix algorithm to  find sum of even numbers upto x for Q queries. Take maxSize as 1000.
+Example1: 
+Input : 
+3   // Queries
+4  //input
+20 //output
+10 //input 
+110 //output
+
+
+
+
+import java.util.*;
+class evenprefixs
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=1000;
+int prefix[]=new int[n];
+prefix[0]=0;
+prefix[1]=2;
+for(int i=2;i<n;i++)
+{
+prefix[i]=prefix[i-1]+2*i;//i=3-->p[2]+2*3=6+6=12
+}
+System.out.println("No.of.Queries");
+int q=sc.nextInt(); 
+while(q>0)
+ {
+System.out.println("Enter number");
+ int sum=sc.nextInt(); 
+System.out.println("Sum of "+sum+" "+"evennumbers ="+" "+prefix[sum]);
+q--; 
+} 
+}
+}
