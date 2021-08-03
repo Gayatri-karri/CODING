@@ -29,8 +29,8 @@ int q=sc.nextInt();
 while(q>0)
  {
 System.out.println("Enter number");
-int sum=sc.nextInt(); 
-System.out.println("Sum of Multiples of 3 upto" +" sum = " +prefix[sum]);
+int x=sc.nextInt(); 
+System.out.println("Sum of Multiples of 3 upto" +" x = " +prefix[x]);
 q--; 
 } 
 }
