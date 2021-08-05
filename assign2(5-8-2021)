@@ -35,7 +35,6 @@ System.out.print("Enter range  ");
 int l=sc.nextInt();
 int r=sc.nextInt();
 int sum=prefix[r]-prefix[l-1];
-System.out.println("Sum of values in the given range ="+ sum);
 System.out.print("Enter range to update elements  ");
 int A=sc.nextInt();
 int B=sc.nextInt();
@@ -52,6 +51,7 @@ for(int i=1;i<size;i++)
 updprefix[i]=updprefix[i-1]+arr[i];
 }
 int updsum=updprefix[r]-updprefix[l-1];
+System.out.println("Sum of values in the given range ="+ sum);
 System.out.println("Sum of values in the given range ="+ updsum);
 }
 }
