@@ -1,0 +1,57 @@
+Given an array arr[] of n integers. The task is to do the following operations:  
+
+Add a value X to all the element  from index A to B where 0 ≤ A ≤ B ≤ N-1.
+Find the sum of the element from index L to R  before update and after update for given array elements.
+
+Example: 
+Input: n=6,arr[] = {1, 3, 5, 7, 9, 11}, L = 1, R = 3, A = 1, B = 5, X = 10 
+Output:             
+Sum of values in given range before  = 15 
+Updated sum of values in given range = 45 
+
+
+import java.util.*;
+class Update_Array
+{
+public static void main(String rgs[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Array size = ");
+int size=sc.nextInt();
+int arr[]=new int[size];
+System.out.print("Array Elements are ");
+for(int i=0;i<size;i++)
+{
+arr[i]=sc.nextInt();
+}
+int n=1000;
+int prefix[]=new int[n];
+prefix[0]=arr[0];
+for(int i=1;i<size;i++)
+{
+prefix[i]=prefix[i-1]+arr[i];
+}
+System.out.print("Enter range  ");
+int l=sc.nextInt();
+int r=sc.nextInt();
+int sum=prefix[r]-prefix[l-1];
+System.out.println("Sum of values in the given range ="+ sum);
+System.out.print("Enter range to update elements  ");
+int A=sc.nextInt();
+int B=sc.nextInt();
+System.out.print("Enter update element  x =");
+int x=sc.nextInt();
+for(int i=A;i<=B;i++)
+{
+arr[i]+=x;
+}
+int updprefix[]=new int[n];
+updprefix[0]=arr[0];
+for(int i=1;i<size;i++)
+{
+updprefix[i]=updprefix[i-1]+arr[i];
+}
+int updsum=updprefix[r]-updprefix[l-1];
+System.out.println("Sum of values in the given range ="+ updsum);
+}
+}
