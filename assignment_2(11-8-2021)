@@ -1,4 +1,4 @@
-/Assignment-2:arranging elements in descending order using any sorting technique.
+//Assignment-2:arranging elements in descending order using any sorting technique.
 import java.util.*;
 class ReverseShellSort
 {
