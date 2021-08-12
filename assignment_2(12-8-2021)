@@ -1,0 +1,28 @@
+//write a program to print array elements using recursion without loop --- Assignment2
+
+import java.util.*;
+class Array
+{
+static void print(int[] arr,int start,int size)
+{
+if(start>=size)
+return;
+System.out.print(arr[start]+" ");
+print(arr,start+1,size);
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int start,size;
+System.out.print(" Enter size  of Array");
+size=sc.nextInt();
+int arr[]=new int[size];
+System.out.print(" Enter Array Elements");
+for(int i=0;i<size;i++)
+{
+arr[i]=sc.nextInt();
+}
+System.out.print(" Array Elements are");
+print(arr,0,size);
+}
+}
