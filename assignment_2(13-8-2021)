@@ -1,0 +1,28 @@
+//Assignment2: Palindrome program using recursion.
+import java.util.*;
+ class Palindrome
+{
+ static int pallin(int n,int temp)
+{
+if(n==0)
+{
+return temp;
+}
+else
+{
+temp=temp*10+n%10;     
+return pallin(n/10,temp);
+}
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println(" Enter number");
+int n=sc.nextInt();
+int temp=pallin(n,0);
+if(temp==n)
+System.out.print("Pallindrome");
+else
+System.out.print("Not a Pallindrome");
+}
+}
