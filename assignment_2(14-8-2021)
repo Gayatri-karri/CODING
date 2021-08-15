@@ -7,7 +7,7 @@ Output:
 import java.util.*;
 class Multiple
 {
-static final int N = 100;
+static final int N = 50;
 static int n = 1;
 static int t=5;
 static void fun1()
