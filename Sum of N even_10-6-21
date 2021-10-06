@@ -1,0 +1,32 @@
+/*1. Write a program to generate sum of n even numbers for q queries. Max value of n is 100
+Example:
+2 --- no.of.queries
+2 -- n value //2 4
+6 -- sum of first 2 even numbers
+5 -- n value
+30 -- sum of first 5 even numbers*/
+
+import java.util.*;
+class even
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter no.of Queries");
+int q=sc.nextInt();
+int i=1;
+while(i<=q)
+{
+int sum=0;
+System.out.println("enter n");
+int n=sc.nextInt();
+for(int j=1;j<=n;j++)
+{
+if(j%2==0)
+sum=sum+j;
+}
+System.out.println("Sum of n even number"+sum);
+i++;
+}
+}
+}
